@@ -13,7 +13,8 @@ if __name__ == "__main__":
 
     # caso 1 (RF1)
     manager.add_user(1, "Alice")
-
+    verificacion = manager.find_user(1)
+    logging.info(f"usuario creado: {verificacion}")
     # caso 2 (RF2)
     manager.add_user(2, "Bob")
     manager.add_user(3, "Charlie")
@@ -72,6 +73,6 @@ if __name__ == "__main__":
     buscador=sum(1 for u in manager.users if u["id"]==3)
     logging.info(f"usuarios con id 3: {buscador}")
     if buscador == 1:
-        logging.info("Ya habia uno")
+        logging.info("Ya habia uno con ese ID")
     else:
-        logging.error("ya habia uno con ese nombre")
+        logging.error("ya {buscador} con ese nombre")
