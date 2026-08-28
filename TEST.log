@@ -1,0 +1,10 @@
+INFO:root:PASS
+INFO:root:all names: ['Alice', 'Charlie']
+INFO:root:PASS
+INFO:root:all names: ['Alice', 'Charlie']
+INFO:root:average user id: 2.0
+INFO:root:tiempo total 2.8399997972883284e-05, usuario{'id': 500, 'name': 'User500'}
+WARNING:root:Usuario no encontrado:None
+ERROR:root:FAIL
+INFO:root:usuarios con id 3: 1
+INFO:root:Ya habia uno
